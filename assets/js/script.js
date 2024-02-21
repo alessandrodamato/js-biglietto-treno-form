@@ -36,20 +36,23 @@ btnGenerate.addEventListener('click', function(){
   if(selectJunior.selected){
 
     finalPrice = price - price * discountJunior / 100;
+    document.getElementById('offer').innerHTML = 'Biglietto Junior';
     console.log('Junior:', 'Prezzo: €', price, 'Prezzo Junior: €', finalPrice.toFixed(2));
     
   } else if (selectSenior.selected){
 
     finalPrice = price - price * discountSenior / 100;
+    document.getElementById('offer').innerHTML = 'Biglietto Senior';
     console.log('Senior:', 'Prezzo: €', price, 'Prezzo Senior: €', finalPrice.toFixed(2));
 
   } else {
 
     finalPrice = price
+    document.getElementById('offer').innerHTML = 'Biglietto Standard';
     console.log('Adulto:', 'Prezzo: €', finalPrice.toFixed(2));
     
   }
 
-  document.getElementById('output-cost').innerHTML = finalPrice.toFixed(2);
+  document.getElementById('output-cost').innerHTML = finalPrice.toFixed(2) + '€';
 
 })

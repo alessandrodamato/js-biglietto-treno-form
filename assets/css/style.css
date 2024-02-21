@@ -25,6 +25,10 @@ h2{
   text-transform: uppercase;
 }
 
+h3{
+  font-size: 1.5rem;
+}
+
 /* calculator */
 
 form{
@@ -98,12 +102,28 @@ form{
 
 .ticket{
   width: 70%;
-  height: 350px;
   margin: 30px auto;
   padding: 30px;
   background-color: white;
 }
 
+.ticket .ticket-content{
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
+#your-ticket .col{
+  padding: 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#your-ticket .col:first-of-type{
+  background-color: grey;
+  justify-content: flex-start;
+}
 
 /* /your-ticket */
