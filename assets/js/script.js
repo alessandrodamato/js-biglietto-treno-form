@@ -47,18 +47,27 @@ btnGenerate.addEventListener('click', function(event){
     finalPrice = price - price * discountJunior / 100;
     document.getElementById('offer').innerHTML = 'Biglietto Junior';
     console.log('Junior:', 'Prezzo: €', price, 'Prezzo Junior: €', finalPrice.toFixed(2));
+    if (isNaN(km)){
+      yourTicket.style = 'display: none;'
+    }
     
   } else if (selectSenior.selected){
 
     finalPrice = price - price * discountSenior / 100;
     document.getElementById('offer').innerHTML = 'Biglietto Senior';
     console.log('Senior:', 'Prezzo: €', price, 'Prezzo Senior: €', finalPrice.toFixed(2));
+    if (isNaN(km)){
+      yourTicket.style = 'display: none;'
+    }
 
   } else {
 
     finalPrice = price
     document.getElementById('offer').innerHTML = 'Biglietto Standard';
     console.log('Adulto:', 'Prezzo: €', finalPrice.toFixed(2));
+    if (isNaN(km)){
+      yourTicket.style = 'display: none;'
+    }
     
   }
 
