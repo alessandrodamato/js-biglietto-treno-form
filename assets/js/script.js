@@ -12,7 +12,9 @@ let selectAge = document.querySelector('.select-age');
 
 
 btnGenera.addEventListener('click', function(){
-  parseInt(km = inputDistance.value);
+  km = parseInt(inputDistance.value);
+  console.log(km);
+
   if(selectAge.value = 'junior'){
     console.log('sono piccolo')
   } else if (selectAge.value = 'senior'){
