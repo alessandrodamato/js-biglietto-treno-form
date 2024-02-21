@@ -12,16 +12,16 @@ let coachAssign;
 let codeAssign;
 
 // con classi
-let inputName = document.querySelector('.input-name');
-let inputDistance = document.querySelector('.input-distance');
-let btnGenerate = document.querySelector('.btn-generate');
-let selectAdult = document.querySelector('.adult');
-let selectJunior = document.querySelector('.junior');
-let selectSenior = document.querySelector('.senior');
-let btnCancel = document.querySelector('.btn-cancel');
+const inputName = document.querySelector('.input-name');
+const inputDistance = document.querySelector('.input-distance');
+const btnGenerate = document.querySelector('.btn-generate');
+const selectAdult = document.querySelector('.adult');
+const selectJunior = document.querySelector('.junior');
+const selectSenior = document.querySelector('.senior');
+const btnCancel = document.querySelector('.btn-cancel');
 
 // con id
-let yourTicket = document.getElementById('your-ticket');
+const yourTicket = document.getElementById('your-ticket');
 
 // funzione del bottone che calcola il prezzo e eventuali sconti
 btnGenerate.addEventListener('click', function(event){
