@@ -20,13 +20,21 @@ h1{
   color: white;
 }
 
+h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* calculator */
+
 form{
   display: flex;
   flex-direction: column;
   width: 70%;
   height: 350px;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 20px;
+  box-shadow: 0 0 10px 2px black;
   background-color: white;
 }
 
@@ -81,3 +89,21 @@ form{
 .col label {
   color: var(--main-red);
 }
+
+/* /calculator */
+
+
+
+/* your-ticket */
+
+.ticket{
+  width: 70%;
+  height: 350px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+}
+
+
+
+/* /your-ticket */
