@@ -11,15 +11,22 @@ let userName;
 let coachAssign;
 let codeAssign;
 
+// con classi
 let inputName = document.querySelector('.input-name');
 let inputDistance = document.querySelector('.input-distance');
 let btnGenerate = document.querySelector('.btn-generate');
 let selectAdult = document.querySelector('.adult');
 let selectJunior = document.querySelector('.junior');
 let selectSenior = document.querySelector('.senior');
+let btnCancel = document.querySelector('.btn-cancel');
+
+// con id
+let yourTicket = document.getElementById('your-ticket');
 
 // funzione del bottone che calcola il prezzo e eventuali sconti
 btnGenerate.addEventListener('click', function(){
+
+  yourTicket.style = 'display: block;'
 
   userName = inputName.value;
   document.getElementById('output-name').innerHTML = userName;
@@ -54,5 +61,12 @@ btnGenerate.addEventListener('click', function(){
   }
 
   document.getElementById('output-cost').innerHTML = finalPrice.toFixed(2) + '€';
+
+})
+
+// funzione che rimuove il biglietto al bottone type reset
+btnCancel.addEventListener('click', function(){
+  
+  yourTicket.style = 'display: none;'
 
 })
