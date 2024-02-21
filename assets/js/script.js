@@ -1,10 +1,9 @@
-let km;
-let age;
-let price;
-
 const priceKm = 0.21;
 const discountJunior = 20;
 const discountSenior = 40;
+
+let km;
+let price;
 
 let inputDistance = document.querySelector('.input-distance');
 let btnGenerate = document.querySelector('.btn-generate');
@@ -14,13 +13,16 @@ let selectSenior = document.querySelector('.senior');
 
 btnGenerate.addEventListener('click', function(){
   km = parseInt(inputDistance.value);
-  console.log(km);
+  price = km * priceKm;
   if(selectJunior.selected){
-    console.log('sono piccolo')
+    finalPrice = price - price * discountJunior / 100;
+    console.log('Junior:', 'Prezzo: €', price, 'Prezzo Junior: €', finalPrice.toFixed(2));
   } else if (selectSenior.selected){
-    console.log('sono vecchio')
+    finalPrice = price - price * discountSenior / 100;
+    console.log('Senior:', 'Prezzo: €', price, 'Prezzo Senior: €', finalPrice.toFixed(2));
   } else {
-    console.log('sono adulto')
+    finalPrice = price
+    console.log('Adulto:', 'Prezzo: €', finalPrice.toFixed(2));
   }
 })
 
