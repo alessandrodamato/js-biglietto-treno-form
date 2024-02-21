@@ -24,7 +24,9 @@ let btnCancel = document.querySelector('.btn-cancel');
 let yourTicket = document.getElementById('your-ticket');
 
 // funzione del bottone che calcola il prezzo e eventuali sconti
-btnGenerate.addEventListener('click', function(){
+btnGenerate.addEventListener('click', function(event){
+
+  event.preventDefault();
 
   yourTicket.style = 'display: block;'
 
