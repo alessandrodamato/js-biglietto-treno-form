@@ -35,5 +35,6 @@ btnGenerate.addEventListener('click', function(){
     console.log('Adulto:', 'Prezzo: €', finalPrice.toFixed(2));
     
   }
+  
 })
 
